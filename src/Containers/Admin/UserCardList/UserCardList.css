@@ -1,0 +1,14 @@
+.tableHeading {
+  color: #20292f;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.userImage {
+  max-width: 50px;
+}
+
+.fontIcon {
+  font-size: 1rem;
+}

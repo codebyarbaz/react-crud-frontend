@@ -1,13 +1,141 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", "sans-serif";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.themeColor {
+  color: #f16e20;
+}
+
+.themeColorHover:hover {
+  color: #f16e20 !important;
+}
+
+.themeColor_Secondary {
+  color: #4c4c4c;
+}
+
+.welcomeHeading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+
+.defaultInput {
+  border: 1px solid #eee;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #0a0a0a !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.defaultInput:focus {
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #0a0a0a !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.themeBtn,
+.themeBtn:focus,
+.themeBtn:active {
+  background-color: #f16e20;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 0;
+  min-width: 95px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+  box-shadow: none;
+}
+
+.extraText {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #919191;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #f16e20;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: animateDots linear 1s infinite;
+}
+
+.dotOne {
+  animation-delay: 0.2s;
+}
+
+.dotTwo {
+  animation-delay: 0.4s;
+}
+
+.dotThree {
+  animation-delay: 0.6s;
+}
+
+.dotFour {
+  animation-delay: 0.8s;
+}
+
+@keyframes animateDots {
+  0% {
+    background-color: #f16e20;
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: #f3935b;
+    transform: scale(1.8);
+  }
+
+  100% {
+    background-color: #f16e20;
+    transform: scale(1);
+  }
+}
+
+.activeLink {
+  border-bottom: 2px solid #f16e20;
+}
+
+.inputRightIcon {
+  color: #919191;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 0.875rem;
+}
+
+.CTA_Wrapper {
+  min-height: 41px;
+}
+
+.mainMenuLink {
+  font-weight: 500;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.5rem;
+  }
 }
